@@ -1,0 +1,48 @@
+# Hand2World release — bidirectional + AR Wan 2.2 inference.
+# Subset of the full repo requirements (training-only deps stripped).
+# Tested with CUDA 12.x, PyTorch 2.7.
+
+torch==2.7.0
+torchvision==0.22.0
+diffusers==0.36.0
+transformers==4.57.3
+accelerate==1.12.0
+peft==0.18.1
+safetensors==0.4.5
+einops==0.8.1
+
+# Wan 2.2 transformer / VAE
+flash-attn==2.8.3
+
+# Video / image IO
+opencv-python==4.11.0.86
+decord==0.6.0
+imageio==2.37.0
+imageio-ffmpeg
+av==13.1.0
+moviepy==1.0.3
+Pillow
+
+# Camera pose preprocessing
+albumentations
+func-timeout
+packaging
+
+# Config
+omegaconf==2.3.0
+PyYAML==6.0.2
+
+# Misc
+numpy==1.24.4
+tqdm
+sentencepiece
+setuptools                       # pkg_resources, required by pytorch_lightning (WiLoR)
+
+# Closed-loop demo only — server-side hand detection (WiLoR + YOLO) and websockets.
+# nvdiffrast must be installed separately: https://github.com/NVlabs/nvdiffrast
+pytorch_lightning
+smplx
+ultralytics
+chumpy
+websockets
+msgpack

@@ -1,1 +1,33 @@
+# Model weights & training assets — fetched via huggingface-cli or huggingface_hub.
+checkpoints/
+
+# Python build / cache artefacts.
+__pycache__/
+*.py[co]
+*.egg-info/
+build/
+dist/
+
+# OS noise.
+.DS_Store
+
+# Source assets that aren't shipped with the repo.
 asset/Teaser.pdf
+
+# Generated outputs — keep the per-mode reference clips (AR + bidirectional),
+# one per shipped example, named to match their `name` field in examples/*.json.
+outputs/*
+!outputs/*_ar.mp4
+!outputs/*_bidirectional.mp4
+
+# Editor / scratch.
+*.swp
+.idea/
+.vscode/
+
+# Dev-only operating notes — release tree is intentionally CLAUDE.md-free in shipped form.
+CLAUDE.md
+
+# Xcode per-user state (not relevant outside the original developer's machine).
+**/xcuserdata/
+*.xcuserstate

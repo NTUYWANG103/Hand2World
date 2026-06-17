@@ -1,0 +1,29 @@
+[
+  {
+    "name": "espressomachine_grab_bidirectional",
+    "scene_image": "examples/espressomachine_grab/scene_image.png",
+    "hand_video": "examples/espressomachine_grab/hand_video.mp4",
+    "camera_file_path": "examples/espressomachine_grab/camera.json",
+    "text": "Egocentric view of hands and forearms with medium warm tan skin.",
+    "fps": 16,
+    "num_frames": 81
+  },
+  {
+    "name": "microwave_grab_bidirectional",
+    "scene_image": "examples/microwave_grab/scene_image.png",
+    "hand_video": "examples/microwave_grab/hand_video.mp4",
+    "camera_file_path": "examples/microwave_grab/camera.json",
+    "text": "Egocentric view of hands and forearms with medium warm tan skin.",
+    "fps": 16,
+    "num_frames": 81
+  },
+  {
+    "name": "mixer_use_bidirectional",
+    "scene_image": "examples/mixer_use/scene_image.png",
+    "hand_video": "examples/mixer_use/hand_video.mp4",
+    "camera_file_path": "examples/mixer_use/camera.json",
+    "text": "Egocentric view of hands and forearms with medium warm tan skin.",
+    "fps": 16,
+    "num_frames": 81
+  }
+]

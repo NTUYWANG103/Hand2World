@@ -1,0 +1,20 @@
+[
+  {
+    "name": "phone_use_ar",
+    "scene_image": "examples/phone_use/scene_image.png",
+    "hand_video": "examples/phone_use/hand_video.mp4",
+    "camera_file_path": "examples/phone_use/camera.json",
+    "text": "Egocentric view of hands and forearms with medium warm tan skin.",
+    "fps": 16,
+    "num_frames": 161
+  },
+  {
+    "name": "waffleiron_use_ar",
+    "scene_image": "examples/waffleiron_use/scene_image.png",
+    "hand_video": "examples/waffleiron_use/hand_video.mp4",
+    "camera_file_path": "examples/waffleiron_use/camera.json",
+    "text": "Egocentric view of hands and forearms with medium warm tan skin.",
+    "fps": 16,
+    "num_frames": 161
+  }
+]

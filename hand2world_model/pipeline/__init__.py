@@ -1,0 +1,1 @@
+from .pipeline_wan2_2_fun_control import Wan2_2FunControlPipeline

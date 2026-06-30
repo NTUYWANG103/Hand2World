@@ -5,6 +5,15 @@
 <a href="https://arxiv.org/abs/2602.09600"><img src='https://img.shields.io/badge/arXiv-2602.09600-b31b1b.svg'></a>
 <a href="https://hand2world.github.io"><img src='https://img.shields.io/badge/Project-Page-green.svg'></a>
 
+[Yuxi Wang](https://github.com/NTUYWANG103)<sup>1</sup>,
+[Wenqi Ouyang](https://vicky0522.github.io/Wenqi-Ouyang/)<sup>1</sup>,
+[Tianyi Wei](https://wtybest.github.io/)<sup>1</sup>,
+[Yi Dong](https://www.researchgate.net/scientific-contributions/Yi-Dong-2045801273)<sup>1</sup>,
+[Zhiqi Shen](https://personal.ntu.edu.sg/zqshen/)<sup>1</sup>,
+[Xingang Pan](https://xingangpan.github.io/)<sup>1</sup>
+
+<sup>1</sup>College of Computing and Data Science, Nanyang Technological University
+
 ![teaser](asset/teaser.png)
 
 </div>
@@ -15,7 +24,7 @@
   - [x] Wan 2.2-5B bidirectional + AR model + checkpoints
   - [x] Closed-loop demo (server + client + iPhone SDK + iOS app)
 - [ ] Release training code
-- [ ] Release data annotation pipeline
+- [ ] Release our [ViDiHand](https://github.com/NTUYWANG103/ViDiHand) data annotation pipeline
 
 Note: We retrain the model on a Wan 2.2 backbone using the ARCTIC dataset only. The AR variant is distilled into a blockwise autoregressive model via Causal Forcing++, and hand-pose annotations are obtained using our [ViDiHand](https://github.com/NTUYWANG103/ViDiHand) pipeline. We may release a larger pretrained checkpoint in the future.
 
@@ -62,6 +71,19 @@ For realtime the server defaults to the 3-step AR schedule and the fast TAE code
 both encode and decode; pass `--no_tae` for the full Wan VAE on both sides, or
 `--num_inference_steps 4` to change the schedule. The iPhone/iPad ARKit camera app
 (and its setup) lives in [hand2world_demo/hand2world-cam/README.md](hand2world_demo/hand2world-cam/README.md).
+
+## Citation
+
+If you find our work useful, please consider giving a star and citing:
+
+```bibtex
+@article{wang2026hand2world,
+  title={Hand2world: Autoregressive egocentric interaction generation via free-space hand gestures},
+  author={Wang, Yuxi and Ouyang, Wenqi and Wei, Tianyi and Dong, Yi and Shen, Zhiqi and Pan, Xingang},
+  journal={arXiv preprint arXiv:2602.09600},
+  year={2026}
+}
+```
 
 ## Acknowledgements
 
